@@ -20,7 +20,7 @@ public class BrowserManager {
 		System.setProperty ("webdriver.chrome.driver","src\\driver\\chromedriver.exe");
 		browser = new ChromeDriver();
 		// implicitly waiting
-		browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		browser.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		//Maximize the browser
 		browser.manage().window().maximize();
 		

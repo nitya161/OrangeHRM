@@ -9,9 +9,9 @@ public class Login_PO {
 		System.out.println("navigated to login_PO");
 		BrowserManager.getdriver().findElement(Login_repo.login_Field).click();
 	  	System.out.println("clicked on login field");
-		BrowserManager.getdriver().findElement(Login_repo.login_Field).sendKeys("_ohrmSysAdmin_");
+		BrowserManager.getdriver().findElement(Login_repo.login_Field).sendKeys("Admin");
 		BrowserManager.getdriver().findElement(Login_repo.pwd_Field).click();
-		BrowserManager.getdriver().findElement(Login_repo.pwd_Field).sendKeys("rXD15BDa");
+		BrowserManager.getdriver().findElement(Login_repo.pwd_Field).sendKeys("dWVmpFRm");
 		BrowserManager.getdriver().findElement(Login_repo.login_btn).click();
 		System.out.println("login test successfully completed");
 		
