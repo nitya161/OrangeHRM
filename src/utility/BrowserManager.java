@@ -19,7 +19,13 @@ public class BrowserManager {
 			
 		System.setProperty ("webdriver.chrome.driver","src\\driver\\chromedriver.exe");
 		browser = new ChromeDriver();
-		browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		// implicitly waiting
+		browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//Maximize the browser
+		browser.manage().window().maximize();
+		
+		// delete cookies
+		browser.manage().deleteAllCookies();
 		
 		}
 				
@@ -28,6 +34,6 @@ public class BrowserManager {
 	
 	 public static void tearDown()
 	 {
-		 browser.close();
+		 browser.quit();
 	 }
 }

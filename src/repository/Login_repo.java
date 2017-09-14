@@ -1,13 +1,12 @@
 package repository;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import utility.BrowserManager;
 
 public class Login_repo 
 {
-	public WebElement login_Field = BrowserManager.browser.findElement(By.id("txtUsername"));
-	//By pwd_Field = By.id("txtPassword");
-	WebElement pwd_Field = BrowserManager.browser.findElement(By.id("txtPassword"));
+	public static By login_Field = By.id("txtUsername");
+	
+	public static By pwd_Field = By.id("txtPassword");
+	public static By login_btn = By.id("btnLogin");
 
 }
